@@ -12,7 +12,7 @@ def write_file(pages, template, categories, j):
     navbar = ""
     for k in categories:
         navbar += '<div class="navbar-element hlist"><a href="./' + k\
-                + '.html" class="center vlist" style="width: ' + str(100 / len(main["categories"]) - 2) + 'vw;"><p class="middle">' + k +'</p></a></div>'
+                + '.html" class="center" style="width: ' + str(100 / len(main["categories"]) - 2) + 'vw;"><p class="middle">' + k +'</p></a></div>'
     page = page    .replace("[[NAVBAR]]", navbar)
     # construct sidebar
     sidebar = ""
