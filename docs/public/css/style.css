@@ -6,10 +6,14 @@ footer {
     margin: 1em;
 }
 
-footer p {
+footer * {
     color: #808080;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 200;
+}
+
+small {
+    font-size: 80%;
 }
 
 .title img {
@@ -30,9 +34,37 @@ body {
     from { background-position: 0 0; }
     to { background-position: 100% 100%; }
 }
+
+.title a {
+    animation: title-float-stack 12s infinite;
+}
+
+@keyframes title-float-stack {
+    from { transform: rotate(0); animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    25% { transform: rotate(2deg); animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1); }
+    50% { transform: rotate(0); animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    75% { transform: rotate(-2deg); animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1); }
+    to { transform: rotate(0); }
+}
+
+.title img {
+    animation: title-float 5s ease-in-out infinite;
+}
+
+@keyframes title-float {
+    from { transform: translate(0, 0) scale(1, 1); }
+    50% { transform: translate(0, -10px) scale(1.01, 1.01); }
+    to { transform: translate(0, 0) scale(1, 1); }
+}
+
+.navbar {
+    margin-top: -20px;
+}
+
 .navbar-element {
     flex: 1;
 }
+
 .navbar-element a {
     height: 100%;
     min-height: 3vw;
@@ -41,7 +73,13 @@ body {
     background: rgba(0, 128, 0, 0.25);
     margin: 0 auto;
     display: table;
+    transition: all 0.2s;
 }
+
+.navbar-element a:hover {
+    background: rgba(0, 128, 0, 0.5);
+}
+
 .navbar-element a * {
     margin: 0;
     display: table-cell;
@@ -133,10 +171,40 @@ i::before {
     max-height: 0;
 }
 
+footer a {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+}
+
+footer i, footer img {
+    width: 2rem;
+    height: 2rem;
+    content: " ";
+    border-radius: 50%;
+    border: 0px transparent solid;
+    overflow: hidden;
+}
+
+footer i::before {
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
+footer i img {
+    width: 2rem;
+}
+
 @media screen and (max-width: 500px) {
     .navbar {
         visibility: hidden;
         max-height: 0;
+    }
+
+    .navbar-element a {
+        transition: none;
     }
 
     .content {
@@ -164,11 +232,14 @@ i::before {
 
     .endmenu-row {
         width: 100vw;
+        height: 75%;
         justify-content: center;
     }
 
     .endmenu-element {
+        min-height: 25%;
         max-height: 25%;
+        height: 25%;
         font-size: 80%;
         display: table-cell;
         width: 80%;
@@ -181,6 +252,8 @@ i::before {
 
     .endmenu-blank {
         min-height: 25%;
+        max-height: 25%;
+        height: 25%;
     }
 
     .endmenu-nav {
