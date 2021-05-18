@@ -16,10 +16,14 @@ footer p {
     width: 100%;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-image: url("../images/bg.png");
     animation: bg-scroll 30s linear infinite;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 @keyframes bg-scroll {
@@ -74,7 +78,8 @@ body {
 
 .post-wrapper {
     margin: 1rem;
-    max-width: calc(100% - 10rem);
+    margin-left: 0;
+    max-width: calc(100% - 11rem);
 }
 
 .post {
@@ -116,4 +121,73 @@ i::before {
     font-size: 0.9rem;
     font-weight: 400;
     vertical-align: middle;
+}
+
+.endmenu, .endmenu-nav, .endmenu-title {
+    overflow: hidden;
+    visibility: hidden;
+    max-height: 0;
+}
+
+.endmenu-element {
+    max-height: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        visibility: hidden;
+        max-height: 0;
+    }
+
+    .content {
+        display: block;
+        margin: 0;
+    }
+
+    .sidebar-wrapper {
+        visibility: hidden;
+        max-height: 0;
+        margin: 0;
+    }
+
+    .post-wrapper {
+        max-width: calc(100% - 2rem);
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+
+    .endmenu, .endmenu-nav, .endmenu-title {
+        visibility: visible;
+        max-height: unset;
+        text-align: center;
+    }
+
+    .endmenu-row {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .endmenu-element {
+        max-height: 25%;
+        font-size: 80%;
+        display: table-cell;
+        width: 80%;
+        align-self: center;
+        background: rgba(128, 192, 128, 0.5);
+        border: 0px transparent solid;
+        border-radius: 1vw;
+        margin: 0.2rem;
+    }
+
+    .endmenu-blank {
+        min-height: 25%;
+    }
+
+    .endmenu-nav {
+        margin: 0 20vw;
+    }
+    
+    .post-nav a {
+        font-size: 0;
+    }
 }
