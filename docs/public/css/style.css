@@ -59,11 +59,15 @@ body {
     padding: 1rem;
 }
 
+.sidebar-element {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .sidebar-element a {
     width: 100%;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: inline;
 }
 
 .post-wrapper {
