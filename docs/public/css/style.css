@@ -58,6 +58,13 @@ body {
     padding: 1rem;
 }
 
+.sidebar-element a {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .post-wrapper {
     margin: 1rem;
 }
