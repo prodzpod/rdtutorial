@@ -19,6 +19,7 @@ footer p {
 body {
     background-image: url("../images/bg.png");
     animation: bg-scroll 30s linear infinite;
+    overflow: hidden;
 }
 
 @keyframes bg-scroll {
@@ -73,6 +74,7 @@ body {
 
 .post-wrapper {
     margin: 1rem;
+    max-width: calc(100% - 10rem);
 }
 
 .post {
