@@ -26,13 +26,13 @@ def write_file(pages, template, categories, j):
         page = page.replace("[[TITLELEFT]]", 'This is the first article.')
     else:
         page
-        page = page.replace("[[URLLEFT]]", pages[j-1][0] + '.html')
+        page = page.replace("[[URLLEFT]]", './' + pages[j-1][0] + '.html')
         page = page.replace("[[TITLELEFT]]", pages[j-1][0])
     if j == len(pages) - 1:
         page = page.replace("[[URLRIGHT]]", '#')
         page = page.replace("[[TITLERIGHT]]", 'This is the last article.')
     else:
-        page = page.replace("[[URLRIGHT]]", pages[j+1][0])
+        page = page.replace("[[URLRIGHT]]", './' + pages[j+1][0] + '.html')
         page = page.replace("[[TITLERIGHT]]", pages[j+1][0])
     with open("./docs/" + page_name + ".html", "w") as f:
         f.write(page)
