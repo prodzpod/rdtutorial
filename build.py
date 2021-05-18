@@ -18,7 +18,7 @@ def write_file(pages, template, categories, j):
     sidebar = ""
     for k in pages:
         sidebar += '<div class="sidebar-element">' + ('&nbsp;' * (2 * k[1]))\
-                + '<a href="./' + k[0] + '.html">' + k[0] + '</button></div>'
+                + '<a href="./' + k[0] + '.html">' + k[0] + '</a></div>'
     page = page    .replace("[[SIDEBAR]]", sidebar)
     # prev/next on lists...
     if j == 0:
@@ -28,7 +28,7 @@ def write_file(pages, template, categories, j):
         page
         page = page.replace("[[URLLEFT]]", pages[j-1][0] + '.html')
         page = page.replace("[[TITLELEFT]]", pages[j-1][0])
-    if j == 0:
+    if j == len(pages) - 1:
         page = page.replace("[[URLRIGHT]]", '#')
         page = page.replace("[[TITLERIGHT]]", 'This is the last article.')
     else:
