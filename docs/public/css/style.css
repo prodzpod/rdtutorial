@@ -1,0 +1,104 @@
+.footer-wrapper {
+    background-color: #404040;
+}
+
+footer {
+    margin: 1em;
+}
+
+footer p {
+    color: #808080;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.title img {
+    width: 100%;
+}
+
+body {
+    background-image: url("../images/bg.png");
+    animation: bg-scroll 30s linear infinite;
+}
+
+@keyframes bg-scroll {
+    from { background-position: 0 0; }
+    to { background-position: 100% 100%; }
+}
+.navbar-element {
+    flex: 1;
+}
+.navbar-element a {
+    height: 100%;
+    min-height: 3vw;
+    border-radius: 1vw;
+    border: 0px transparent solid;
+    background: rgba(0, 128, 0, 0.25);
+    margin: 0 auto;
+    justify-content: center;
+}
+.navbar-element a * {
+    margin: 0;
+}
+
+.content {
+    margin-top: 16px;
+}
+
+.sidebar-wrapper {
+    max-width: 8rem;
+    margin: 1rem;
+}
+
+.sidebar {
+    background: #ffffe0;
+    border: 1px rgba(128, 128, 0, 0.25) solid;
+    border-radius: 1vw;
+    width: 100%;
+    padding: 1rem;
+}
+
+.post-wrapper {
+    margin: 1rem;
+}
+
+.post {
+    background: #ffffe0;
+    border: 1px rgba(128, 128, 0, 0.25) solid;
+    border-radius: 1vw;
+    padding: 1rem;
+}
+
+.post-title {
+    margin-bottom: 1rem;
+}
+.post-tags {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-nav *, .sidebar-element * {
+    background-color: transparent;
+    border: 0px transparent solid;
+    color: #404020;
+    font-size: 80%;
+}
+
+c {
+    color: #808040;
+    font-size: 70%;
+}
+
+.sidebar-element button::before {
+    content: "- ";
+}
+
+i {
+    display: inline !important;
+}
+
+i::before {
+    font-size: 0.9rem;
+    font-weight: 400;
+    vertical-align: middle;
+}
