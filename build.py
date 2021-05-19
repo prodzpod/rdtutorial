@@ -56,13 +56,15 @@ def write_file(pages, template, categories, j):
         f.write(page)
     print(page_name + " written.")
 
+###############################################################################
 print("Build started.")
+MAIN_JSON = "Getting Into It"
 
 with open("template.html", "r") as f:
     template = f.read()
 print("Template loaded.")
 
-with open("./category/Main.json", "r") as f:
+with open("./category/" + MAIN_JSON + ".json", "r") as f:
     main = json.load(f)
 print("Main JSON loaded.")
 categories = main["categories"]
@@ -78,4 +80,3 @@ for i in range(len(categories)):
 
     for j in range(len(pages)): # [name, indent]
         write_file(pages, template, categories, j)
-write_file(main["pages"], template, categories, 0)

@@ -1,5 +1,19 @@
 {
+    "categories": [
+        "Getting Into It",
+        "Gameplay",
+        "VFX",
+        "RDCode",
+        "Miscellaneous"
+    ],
     "pages": [
-        ["Getting Into It", 0]
+        ["Your First Step to World Domination", 0],
+        ["Before We Start", 1],
+        ["So What Now", 1],
+        ["Turning On Music", 1],
+        ["Gameplay", 0],
+        ["VFX", 0],
+        ["RDCode", 0],
+        ["Miscellaneous", 0]
     ]
 }
