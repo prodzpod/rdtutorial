@@ -23,7 +23,7 @@ def write_file(pages, template, categories, j):
     # construct endmenu
     endmenu = ""
     k = 0
-    endmenu += '<div id="endmenu" class="endmenu hlist" style="width:' + str(round(len(pages) / 4 + 0.5) * 100) +'vw">'
+    endmenu += '<div id="endmenu" class="endmenu hlist" style="width:' + str(round(len(pages) / 4 + 0.25) * 100) +'vw">'
     while 1:
         if (k >= len(pages)):
             break
