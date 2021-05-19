@@ -32,7 +32,7 @@ body {
 
 @keyframes bg-scroll {
     from { background-position: 0 0; }
-    to { background-position: 100% 100%; }
+    to { background-position: 100vw 100vw; }
 }
 
 .title a {
