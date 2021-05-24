@@ -43,7 +43,7 @@ function print(it) {
     it.select();
     document.execCommand("copy");
 }
-app.addEventListener('zero-md-rendered', () => {
+window.onload = () => {
     var clipboard = new ClipboardJS(".rdzip");
     console.log("onLoad Called")
 
