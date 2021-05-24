@@ -35,7 +35,7 @@
         list-style: none;
         letter-spacing: var(--text-spacing-letter);
         margin-bottom: var(--text-spacing-line);
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        font-family:'04b03', 'Noto Sans CJK', 'Noto Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     }
     
     a, button {
@@ -91,7 +91,7 @@
         --bg-secondary: #242729;
         --text-primary: black;
         --text-secondary: white;
-        --text-em: blue;
+        --text-em: black;
         --text-c: #666;
         --text-em-secondary: orange;
         --text-c-secondary: #999;
