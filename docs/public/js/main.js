@@ -43,8 +43,7 @@ function print(it) {
     it.select();
     document.execCommand("copy");
 }
-
-window.onload = function() {
+app.addEventListener('zero-md-rendered', () => {
     var clipboard = new ClipboardJS(".rdzip");
     console.log("onLoad Called")
 
@@ -59,4 +58,4 @@ window.onload = function() {
         console.error('Action:', e.action);
         console.error('Trigger:', e.trigger);
     });
-};
+});
