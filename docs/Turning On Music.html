@@ -44,7 +44,21 @@
                                     <link rel="stylesheet" href="./public/css/style.css">
                                     <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
                                     <script>
-                                        window.onload = function() {var clipboard = new ClipboardJS(".rdzip")};
+                                        window.onload = function() {
+                                            var clipboard = new ClipboardJS(".rdzip");
+
+                                            clipboard.on('success', function (e) {
+                                                console.info('Action:', e.action);
+                                                console.info('Text:', e.text);
+                                                console.info('Trigger:', e.trigger);
+
+                                                e.clearSelection();
+                                            });
+                                            clipboard.on('error', function (e) {
+                                                console.error('Action:', e.action);
+                                                console.error('Trigger:', e.trigger);
+                                            });
+                                        };
                                     </script>                             
                                 </template>
                             </zero-md>
