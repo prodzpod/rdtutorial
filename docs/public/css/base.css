@@ -31,7 +31,7 @@
         position: relative;
     }
     
-    a, button, span, p, em, b, ul, li, h1, h2, h3, h4, h5, h6 {
+    a, button, span, p, em, b, ul, li, h1, h2, h3, h4, h5, h6, small, li, td, input, button {
         list-style: none;
         letter-spacing: var(--text-spacing-letter);
         margin-bottom: var(--text-spacing-line);
