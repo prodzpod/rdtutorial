@@ -43,6 +43,20 @@
                                 <template>
                                     <link rel="stylesheet" href="./public/css/base.css">
                                     <link rel="stylesheet" href="./public/css/style.css">
+                                    <script>
+                                        window.addEventListener('load', init);
+                                        function init() {
+                                            var clipboard = new ClipboardJS(".rdzip");
+
+                                            clipboard.on('success', function (e) {
+                                                console.info('Action:', e.action);
+                                                console.info('Text:', e.text);
+                                                console.info('Trigger:', e.trigger);
+
+                                                e.clearSelection();
+                                            });
+                                        }
+                                    </script>                             
                                 </template>
                             </zero-md>
                         </div>
