@@ -8,11 +8,6 @@ let enabled = true;
 i = 0;
 function init() {
     maxpage = Math.floor((document.querySelectorAll('.endmenu-element').length + 3) / 4);
-    
-    clipboard.on('error', function (e) {
-        console.error('Action:', e.action);
-        console.error('Trigger:', e.trigger);
-    });
 }
 
 function endmenuleft() {
