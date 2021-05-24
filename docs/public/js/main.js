@@ -43,3 +43,20 @@ function print(it) {
     it.select();
     document.execCommand("copy");
 }
+
+window.onload = function() {
+    var clipboard = new ClipboardJS(".rdzip");
+    console.log("onLoad Called")
+
+    clipboard.on('success', function (e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+
+        e.clearSelection();
+    });
+    clipboard.on('error', function (e) {
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+    });
+};

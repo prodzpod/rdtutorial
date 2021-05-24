@@ -22,16 +22,16 @@
         ",one": "![one   ](/rdtutorial/public/images/oneshot/one.png)",
         ",two": "![two   ](/rdtutorial/public/images/oneshot/two.png)",
         ",three": "![three ](/rdtutorial/public/images/oneshot/three.png)",
-        "@1": "![Onion-o-meter: Questionable](/rdtutorial/public/images/onion/1.png)",
-        "@2": "![Onion-o-meter: Questionable](/rdtutorial/public/images/onion/2.png)",
-        "@3": "![Onion-o-meter: Questionable](/rdtutorial/public/images/onion/3.png)",
-        "@?": "![Onion-o-meter: Questionable](/rdtutorial/public/images/onion/unknown.png)"
+        "@1": "![Onion-o-meter: Questionable](/rdtutorial/public/images/icon/onion1.png)",
+        "@2": "![Onion-o-meter: Questionable](/rdtutorial/public/images/icon/onion2.png)",
+        "@3": "![Onion-o-meter: Questionable](/rdtutorial/public/images/icon/onion3.png)",
+        "@?": "![Onion-o-meter: Questionable](/rdtutorial/public/images/icon/onionunknown.png)"
     },
     "regex": {
         "\\!\\[(.*)\\]": "![Screenshot](/rdtutorial/public/images/\\1)  ",
         "\\[\\[(.*)\\]\\]": "![Internal Link: ](/rdtutorial/public/images/icon/favicon.png)[\\1](/\\1.html)",
         "g:\\[(.*)\\]\\((.*)\\)": "![Gitbook: ](/rdtutorial/public/images/icon/gitbook.png)[\\1](https://rhythm-doctor.gitbook.io/level-editor/\\2)",
         "a:\\[(.*)\\]\\((.*)\\)": "![RDZip: ](/rdtutorial/public/images/icon/auburn.png)<button class=\"rdzip\" data-clipboard-text=\"\\2\">\\1</button>",
-        "{(.)(.)(.)(.)(.)(.)}": "![\\1](/rdtutorial/public/images/xrows/\\1.png)![\\2](/rdtutorial/public/images/xrows/\\2.png)![\\3](/rdtutorial/public/images/xrows/\\3.png)![\\4](/rdtutorial/public/images/xrows/\\4.png)![\\5](/rdtutorial/public/images/xrows/\\5.png)![\\6](/rdtutorial/public/images/xrows/\\6.png)"
+        "{(.)(.)(.)(.)(.)(.)}": "![\\1](/rdtutorial/public/images/rows/\\1.png)![\\2](/rdtutorial/public/images/rows/\\2.png)![\\3](/rdtutorial/public/images/rows/\\3.png)![\\4](/rdtutorial/public/images/rows/\\4.png)![\\5](/rdtutorial/public/images/rows/\\5.png)![\\6](/rdtutorial/public/images/rows/\\6.png)"
     }
 }

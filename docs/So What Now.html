@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./public/css/base.css">
     <link rel="stylesheet" href="./public/css/style.css">
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
     <script src="./public/js/main.js"></script>
     <title>RD Editor Tutorial :: So What Now</title>
   </head>
@@ -38,31 +39,7 @@
                             <h1>So What Now</h1>
                         </div>
                         <div class="post-text">
-                            <zero-md src="./public/pages/So What Now.md">
-                                <template>
-                                    <link rel="stylesheet" href="./public/css/base.css">
-                                    <link rel="stylesheet" href="./public/css/style.css">
-                                    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
-                                    <script>
-                                        window.onload = function() {
-                                            var clipboard = new ClipboardJS(".rdzip");
-                                            console.log("onLoad Called")
-
-                                            clipboard.on('success', function (e) {
-                                                console.info('Action:', e.action);
-                                                console.info('Text:', e.text);
-                                                console.info('Trigger:', e.trigger);
-
-                                                e.clearSelection();
-                                            });
-                                            clipboard.on('error', function (e) {
-                                                console.error('Action:', e.action);
-                                                console.error('Trigger:', e.trigger);
-                                            });
-                                        };
-                                    </script>                             
-                                </template>
-                            </zero-md>
+                            <zero-md data-merge="append" src="./public/pages/So What Now.md"></zero-md>
                         </div>
                         <div class="post-nav hlist">
                             <a href="./Before We Start.html" class="post-button post-button-left left"><i class="xi-angle-left-min"></i> Before We Start</a>
