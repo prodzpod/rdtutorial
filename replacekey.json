@@ -1,0 +1,37 @@
+{
+    "simple": {
+        "<c>": "<span style=\"color:#808080\">",
+        "</c>": "</span>",
+        ",rea": "![rea   ](../images/oneshot/rea.png)",
+        ",dy": "![dy    ](../images/oneshot/dy.png)",
+        ",get": "![get   ](../images/oneshot/get.png)",
+        ",set": "![set   ](../images/oneshot/set.png)",
+        ",go": "![go    ](../images/oneshot/go.png)",
+        ",and": "![and   ](../images/oneshot/and.png)",
+        ",stop": "![stop  ](../images/oneshot/stop.png)",
+        ",,": "![      ](../images/oneshot/blank.png)",
+        ",h": "![   ](../images/oneshot/halfBlank.png)",
+        ",1": "![1     ](../images/oneshot/beat1.png)",
+        ",2": "![2     ](../images/oneshot/beat2.png)",
+        ",3": "![3     ](../images/oneshot/beat3.png)",
+        ",4": "![4     ](../images/oneshot/beat4.png)",
+        ",5": "![5     ](../images/oneshot/beat5.png)",
+        ",6": "![6     ](../images/oneshot/beat6.png)",
+        ",7": "![7     ](../images/oneshot/beat7.png)",
+        ",8": "![8     ](../images/oneshot/beat8.png)",
+        ",one": "![one   ](../images/oneshot/one.png)",
+        ",two": "![two   ](../images/oneshot/two.png)",
+        ",three": "![three ](../images/oneshot/three.png)",
+        "@1": "![Onion-o-meter: Questionable](../images/onion/1.png)",
+        "@2": "![Onion-o-meter: Questionable](../images/onion/2.png)",
+        "@3": "![Onion-o-meter: Questionable](../images/onion/3.png)",
+        "@?": "![Onion-o-meter: Questionable](../images/onion/unknown.png)"
+    },
+    "regex": {
+        "\\!\\[(.*)\\]": "![Screenshot](../images/\\1)  ",
+        "\\[\\[(.*)\\]\\]": "![Internal Link: ](../images/icon/favicon.png)[\\1](../\\1.html)",
+        "g:\\[(.*)\\]\\((.*)\\)": "![Gitbook: ](../images/icon/gitbook.png)[\\1](https://rhythm-doctor.gitbook.io/level-editor/\\2)",
+        "a:\\[(.*)\\]\\((.*)\\)": "![RDZip: ](../images/icon/auburn.png)<button class=\"rdzip\" data-clipboard-text=\"\\2\">\\1</button>",
+        "{(.)(.)(.)(.)(.)(.)}": "![\\1](../images/xrows/\\1.png)![\\2](../images/xrows/\\2.png)![\\3](../images/xrows/\\3.png)![\\4](../images/xrows/\\4.png)![\\5](../images/xrows/\\5.png)![\\6](../images/xrows/\\6.png)"
+    }
+}

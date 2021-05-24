@@ -1,6 +1,6 @@
 *Ah, so you've decided to levelmake...*
 
-![Screenshot](../images/title)  (../images/basics/rdtutorial0.png)
+![title](../images/basics/rdtutorial0.png)
 
 Welcome to prod's **RD Editor Tutorial**. no fancy names, straight to the point.  
 Just like the name suggests, we cut all the stuff, and will focus on kickstarting you into being a good creator.  

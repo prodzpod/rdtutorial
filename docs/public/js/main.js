@@ -38,3 +38,8 @@ function tick() {
     }
     else setTimeout(tick, 10);
 }
+
+function print(it) {
+    it.select();
+    document.execCommand("copy");
+}
