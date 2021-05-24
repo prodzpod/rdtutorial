@@ -44,21 +44,21 @@
                                     <link rel="stylesheet" href="./public/css/base.css">
                                     <link rel="stylesheet" href="./public/css/style.css">
                                     <script>
-                                        window.addEventListener('load', () => {
+                                        window.onload = function() {
                                             var clipboard = new ClipboardJS(".rdzip");
-
+    
                                             clipboard.on('success', function (e) {
                                                 console.info('Action:', e.action);
                                                 console.info('Text:', e.text);
                                                 console.info('Trigger:', e.trigger);
-
+    
                                                 e.clearSelection();
                                             });
                                             clipboard.on('error', function (e) {
                                                 console.error('Action:', e.action);
                                                 console.error('Trigger:', e.trigger);
                                             });
-                                        });
+                                        };
                                     </script>                             
                                 </template>
                             </zero-md>

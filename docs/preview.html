@@ -42,14 +42,53 @@
                             <h2>Your First Step to World Domination</h2>
                         </div>
                         <div class="post-text">
-                            <div class="markdown-styles"><style>:host{display:block;position:relative;contain:content;}:host([hidden]){display:none;}</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@4/github-markdown.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PrismJS/prism@1/themes/prism.min.css"></div>
-                            <div class="markdown-body"><p><em>Ah, so you've decided to levelmake...</em></p>
-                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/rdtutorial0.png" alt="Screenshot">  </p>
-                                <p>Welcome to prod's <strong>RD Editor Tutorial</strong>. no fancy names, straight to the point.<br>Just like the name suggests, we cut all the stuff, and will focus on kickstarting you into being a good creator.  </p>
-                                <p>I will also link you to various external sources you can look at, so if you want some in-depth studies or more qualified opinions, check those links out. they're good, I assure you.</p>
-                                <p>Keep in mind that at the time of writing this, I made a total of <strong>1</strong> level. so you might want to get more opinion about some of the less clear cut stuff.</p>
-                                <p>This tutorial is made for <strong>Rhythm Doctor Early Access, r19 Editor</strong>, so free editors might be unable to do some of the more technical stuffs, and the document might miss some of the effects as the editor updates.</p>
-                                <p>Now with that out of the way, let's begin.<br>(There will be more pictures and less words on the actual tutorial.)</p>
+                            <div class="markdown-styles"><style>:host{display:block;position:relative;contain:content;}:host([hidden]){display:none;}</style>
+                                <link rel="stylesheet" href="./public/css/base.css">
+                                <link rel="stylesheet" href="./public/css/style.css">
+                                <script>
+                                    window.onload = function() {
+                                        var clipboard = new ClipboardJS(".rdzip");
+
+                                        clipboard.on('success', function (e) {
+                                            console.info('Action:', e.action);
+                                            console.info('Text:', e.text);
+                                            console.info('Trigger:', e.trigger);
+
+                                            e.clearSelection();
+                                        });
+                                        clipboard.on('error', function (e) {
+                                            console.error('Action:', e.action);
+                                            console.error('Trigger:', e.trigger);
+                                        });
+                                    };
+                                </script>                             
+                            </div>
+                            <div class="markdown-body"><p>Music is one of the most important part in RD. it's a rhythm game after all.
+                                <img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_8.jpg" alt="Screenshot"><br>let's click the <strong>Sound Tab</strong> to put some sounds in.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_9.jpg" alt="Screenshot"><br>cool! we have a whole new tab. let's try clicking at the start of the level.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_10.jpg" alt="Screenshot"><br>choose "Play Song", that's what we want.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_11.jpg" alt="Screenshot"><br>After that, you'll get some things... but ignore those for now, and click the folder icon.<br>Remember that you need an <strong>.ogg</strong> file. the game will technically accept other formats... but they're either huge in file size or has inconsistent timing- which is <em>very bad for rhythm games</em>.<br>Here's <a href="https://flicflac-audio-converter.en.softonic.com/">mp3 to ogg</a> converter if you need one.</p>
+                                <p>...wait, you don't have your music at hand? that's fine! we can download it off youtube, soundcloud, spotify and all that.</p>
+                                <p><a href="https://ytdl-org.github.io/youtube-dl/index.html">youtube-dl</a> allows you to directly download to ogg and also download from multiple platforms, but in conjunction with the converter, i found <a href="https://4k-video-downloader.en.softonic.com/download">This</a> pretty fast too. use what you feel like it, as long as the result is an <strong>.ogg</strong> file.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_12.jpg" alt="Screenshot"><br>Okay! we have our music. now, let's calculate the bpm... click there, and hit your space bar to the beat.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_13.jpg" alt="Screenshot"><br>I got 132 BPM! but unless you're super precise, this number will be wrong. let's use the <strong>scroll bar</strong>...</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_14.jpg" alt="Screenshot"><br>Adjust your bpm by 1 until it sorta match up. be aware that some songs have <strong>decimal BPM</strong>, and... for those edge cases, scroll down.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_15.jpg" alt="Screenshot"><br>Now, most of the time, the sound won't perfectly match. we also need to set the <strong>offset</strong>! let's go back to the <em>rows</em> tab.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_16.jpg" alt="Screenshot"><br>Yup, a bit off. even if it doesn't look off, try playing it and see if the beats line up. you should be able to only hear 1 sound, rather than 2 consecutive sounds- if you know what I mean.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_17.jpg" alt="Screenshot"><br>So, how do you change the offset? go back to the <em>sounds</em> tab, and click on the <em>play song</em> event you placed down. click on the <em>spanner icon</em>.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_18.jpg" alt="Screenshot"><br>There! there's the offset. go back to your bar far ahead, and mess it with my 50ms or so until it fits the best.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_19.jpg" alt="Screenshot"><br>There! now it works.</p>
+                                <h2 id="still-having-trouble">Still Having Trouble...?</h2>
+                                <p>There are some songs that are... a bit weird. weird BPM, weird offset... in that case, we need to go deeper.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_20.jpg" alt="Screenshot"><br>You can use a DAW or something, but we'll be using <a href="https://www.audacityteam.org/download/">Audacity</a> for this tutorial. since it's free and all.</p>
+                                <p>Let's zoom in to the beginning of the song. use the scroll wheel or zoom in button.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_21.jpg" alt="Screenshot"><br>There's the silence! drag your mouse from the beginning of the song to the end of this silence.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_22.jpg" alt="Screenshot"><br>press delete, then File &gt; Export. remember to make it an <strong>.ogg</strong> file!</p>
+                                <p>and you should be good! set the offset to 0ms, then try to figure out what the BPM is.</p>
+                                <p><img src="https://prodzpod.github.io/rdtutorial/public/images/basics/basics_23.jpg" alt="Screenshot"><br><span style="color:#808080">good level btw <img src="https://prodzpod.github.io/rdtutorial/public/images/icon/auburn.png" alt="RDZip: "><button class="rdzip" data-clipboard-text="https://cdn.discordapp.com/attachments/611380148431749151/839276814501019648/nelward_-_Ghost.rdzip">go play it</button></span>
+                                of course, there are exceptions to this as well. when the song is performed live, there could be slight BPM drifts mid song, the song could accelerate, decellerate... yeah. In that case, ask for help on the discord server. people may be able to help you?</p>
+                                <h2 id="were-done-with-the-basics">We're done with the basics!</h2>
+                                <p>Woo! Finally. Let's go and make some charts now.</p>
                                 </div>
                         </div>
                         <div class="post-nav hlist">
