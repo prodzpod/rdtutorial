@@ -8,6 +8,7 @@ let enabled = true;
 i = 0;
 function init() {
     maxpage = Math.floor((document.querySelectorAll('.endmenu-element').length + 3) / 4);
+    var clipboard = new ClipboardJS(".rdzip");
 }
 
 function endmenuleft() {
