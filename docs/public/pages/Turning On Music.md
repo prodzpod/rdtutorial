@@ -1,6 +1,6 @@
 Music is one of the most important part in RD. it's a rhythm game after all.
 ![Screenshot](/rdtutorial/public/images/basics/basics_8.jpg)  
-let's click the <b style="--d:0">S</b><b style="--d:1">o</b><b style="--d:2">u</b><b style="--d:3">n</b><b style="--d:4">d</b><b style="--d:5"> </b><b style="--d:6">T</b><b style="--d:7">a</b><b style="--d:8">b</b> to put some sounds in.
+let's click the <b style="--d:0">S</b><b style="--d:1">o</b><b style="--d:2">u</b><b style="--d:3">n</b><b style="--d:4">d</b><b style="--d:5">&nbsp;</b><b style="--d:6">T</b><b style="--d:7">a</b><b style="--d:8">b</b> to put some sounds in.
 
 ![Screenshot](/rdtutorial/public/images/basics/basics_9.jpg)  
 cool! we have a whole new tab. let's try clicking at the start of the level.
@@ -21,10 +21,10 @@ Here's [mp3 to ogg](https://flicflac-audio-converter.en.softonic.com/) converter
 Okay! we have our music. now, let's calculate the bpm... click there, and hit your space bar to the beat.
 
 ![Screenshot](/rdtutorial/public/images/basics/basics_13.jpg)  
-I got 132 BPM! but unless you're super precise, this number will be wrong. let's use the <b style="--d:0">s</b><b style="--d:1">c</b><b style="--d:2">r</b><b style="--d:3">o</b><b style="--d:4">l</b><b style="--d:5">l</b><b style="--d:6"> </b><b style="--d:7">b</b><b style="--d:8">a</b><b style="--d:9">r</b>...
+I got 132 BPM! but unless you're super precise, this number will be wrong. let's use the <b style="--d:0">s</b><b style="--d:1">c</b><b style="--d:2">r</b><b style="--d:3">o</b><b style="--d:4">l</b><b style="--d:5">l</b><b style="--d:6">&nbsp;</b><b style="--d:7">b</b><b style="--d:8">a</b><b style="--d:9">r</b>...
 
 ![Screenshot](/rdtutorial/public/images/basics/basics_14.jpg)  
-Adjust your bpm by 1 until it sorta match up. be aware that some songs have <b style="--d:0">d</b><b style="--d:1">e</b><b style="--d:2">c</b><b style="--d:3">i</b><b style="--d:4">m</b><b style="--d:5">a</b><b style="--d:6">l</b><b style="--d:7"> </b><b style="--d:8">B</b><b style="--d:9">P</b><b style="--d:10">M</b>, and... for those edge cases, scroll down.
+Adjust your bpm by 1 until it sorta match up. be aware that some songs have <b style="--d:0">d</b><b style="--d:1">e</b><b style="--d:2">c</b><b style="--d:3">i</b><b style="--d:4">m</b><b style="--d:5">a</b><b style="--d:6">l</b><b style="--d:7">&nbsp;</b><b style="--d:8">B</b><b style="--d:9">P</b><b style="--d:10">M</b>, and... for those edge cases, scroll down.
 
 ![Screenshot](/rdtutorial/public/images/basics/basics_15.jpg)  
 Now, most of the time, the sound won't perfectly match. we also need to set the <b style="--d:0">o</b><b style="--d:1">f</b><b style="--d:2">f</b><b style="--d:3">s</b><b style="--d:4">e</b><b style="--d:5">t</b>! let's go back to the *rows* tab.

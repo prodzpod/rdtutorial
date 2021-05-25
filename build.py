@@ -19,7 +19,10 @@ for root, dirs, files in os.walk("./content"):
         for matches in re.findall("\\*\\*.+?\\*\\*", doc):
             txt = ""
             for letter in enumerate(matches[2:-2]):
-                txt += "<b style=\"--d:" + str(letter[0]) + "\">" + letter[1] + "</b>"
+                l = letter[1]
+                if (l == ' '):
+                    l = '&nbsp;'
+                txt += "<b style=\"--d:" + str(letter[0]) + "\">" + l + "</b>"
             doc = doc.replace(matches, txt)
         with open(os.path.join("./docs/public/pages/", file), "w+") as f:
             f.write(doc)
