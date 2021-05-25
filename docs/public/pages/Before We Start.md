@@ -20,6 +20,6 @@ in order to upload to Auburnsummer, you need to join the official RD discord ser
 
 Playing other's levels and seeing how others did them are great learning. <b style="--d:0">R</b><b style="--d:1">D</b><b style="--d:2">L</b><b style="--d:3">&nbsp;</b><b style="--d:4">S</b><b style="--d:5">e</b><b style="--d:6">t</b><b style="--d:7">l</b><b style="--d:8">i</b><b style="--d:9">s</b><b style="--d:10">t</b><b style="--d:11">s</b> provides hundreds of high-quality levels hand-picked for your experience.
 
-<c><span style="color:#808080">remind me to add kin's tutorioles when it comes out...</span></c>
+<c>remind me to add kin's tutorioles when it comes out...</c>
 
 There are more basic resources, I will link them when the time is right- because the other's are specific to certain parts of editors.

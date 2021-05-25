@@ -1,7 +1,5 @@
 {
     "simple": {
-        "<c>": "<c><span style=\"color:#808080\">",
-        "</c>": "</span></c>",
         ",rea": "![rea   ](/rdtutorial/public/images/oneshot/rea.png)",
         ",dy": "![dy    ](/rdtutorial/public/images/oneshot/dy.png)",
         ",get": "![get   ](/rdtutorial/public/images/oneshot/get.png)",
