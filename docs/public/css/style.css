@@ -200,7 +200,6 @@ footer i img {
 .markdown-body a, .markdown-body button, .markdown-body input {
     background-color: transparent;
     border: 0px transparent solid;
-    font-size: 16px;
     padding: 0;
     text-decoration: underline;
     color: blue;
@@ -211,7 +210,6 @@ footer i img {
 }
 
 .markdown-body {
-    font-size: 16px;
     line-height: 1.5;
     word-wrap: break-word;
 }
