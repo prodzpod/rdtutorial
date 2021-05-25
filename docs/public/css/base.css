@@ -13,7 +13,6 @@
         box-sizing: border-box;
         padding: 0;
         margin: 0;
-        color: var(--text-primary);
     }
     
     a, li {
@@ -33,8 +32,6 @@
     
     a, span, div, p, em, b, c, ul, li, h1, h2, h3, h4, h5, h6, small, td, input, button {
         list-style: none;
-        letter-spacing: var(--text-spacing-letter);
-        margin-bottom: var(--text-spacing-line);
         font-family:'04b03', 'Noto Sans CJK', 'Noto Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
@@ -67,37 +64,8 @@
     }
     
     a, button {
-        color: var(--text-primary);
         text-decoration: none;
         cursor: pointer;
-    }
-    
-    [class*=line] {
-        margin-bottom: var(--text-spacing-line);
-    }
-    
-    .flip *, .flip i::before, .flip a, .flip button, .flip span, .flip p, .flip em, .flip b, .flip ul, .flip li, .flip h1, .flip h2, .flip h3, .flip h4, .flip h5, .flip h6 {
-        color: var(--text-secondary);
-    }
-    
-    strong {
-        color: var(--text-em);
-    }
-    
-    .flip strong {
-        color: var(--text-em-secondary);
-    }
-    
-    c {
-        color: var(--text-c);
-    }
-    
-    .flip c {
-        color: var(--text-c-secondary);
-    }
-    
-    .paragraph {
-        margin-bottom: var(--text-spacing-paragraph);
     }
     
     .noscroll {
@@ -109,26 +77,6 @@
         width: 100%;
         height: 100%;
         position: relative;
-    }
-    
-    :root {
-        scroll-behavior: smooth;
-        --header-max: 1850px;
-        /** theme: dev **/
-        --bg-primary: white;
-        --bg-secondary: #242729;
-        --text-primary: black;
-        --text-secondary: white;
-        --text-em: black;
-        --text-c: #666;
-        --text-em-secondary: orange;
-        --text-c-secondary: #999;
-        --text-spacing-letter: 0;
-        --text-spacing-word: 0;
-        --text-spacing-line: 4px;
-        --text-spacing-paragraph: 16px;
-        background-color: var(--bg-primary);
-        --button-height: 40px;
     }
     
     .main {
@@ -160,18 +108,7 @@
         -ms-flex: 999 1 auto !important;
         flex: 999 0 auto !important;
     }
-/*     
-    header, footer, navbar {
-        border-top: 1px var(--text-c) solid;
-        border-bottom: 1px var(--text-c) solid;
-        background-color: var(--bg-primary);
-    }
-    
-    header.flip, footer.flip, navbar.flip {
-        border: none;
-        background-color: var(--bg-secondary);
-    }
-     */
+
     .left {
         float: left;
         left: 0;
@@ -220,9 +157,3 @@
     .inline > * {
         display: inline-block;
     }
-    
-    /*TODO: DO THIS BUT IN CSS??? IS THIS EVEN POSSIBLE
-    .height-rounded, .height-rounded i {
-        border-radius: 50% of height;
-    }
-    **/

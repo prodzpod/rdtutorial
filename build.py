@@ -1,6 +1,10 @@
 import os
 import re
 import json
+def touch(fname, times=None):
+    with open(fname, 'a'):
+        os.utime(fname, times)
+
 print("Build started.")
 MAIN_JSON = "Getting Into It"
 ###############################################################################
@@ -47,6 +51,9 @@ for i in range(len(categories)):
 
     for j in range(len(pages)): # [name, indent]
         page_name = pages[j][0]
+        if not os.path.exists("./content/" + page_name + ".md"):
+            touch("./content/" + page_name + ".md")
+            touch("./docs/public/pages/" + page_name + ".md")
         print(page_name + " page loaded. (" + str(j + 1) + "/" + str(len(pages)) + ").")
         # actually begin loading pages
         page = template.replace("[[TITLE]]", page_name)
