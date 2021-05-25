@@ -224,23 +224,23 @@ h1 {
 
 @keyframes wavy-text {
     from {
-        transform: translateY(-2px);
+        transform: translateY(-4px);
     }
 
     50% {
-        transform: translateY(2px);
+        transform: translateY(4px);
     }
 
     to {
-        transform: translateY(-2px);
+        transform: translateY(-4px);
     }
 }
 
 strong, b {
     display: inline-block;
     font-weight: normal;
-    animation: wavy-text 4s ease-in-out infinite;
-    animation-delay: calc(0.1s * var(--d));
+    animation: wavy-text 2s ease-in-out infinite;
+    animation-delay: calc(0.02s * var(--d));
 }
 
 @media screen and (max-width: 500px) {
