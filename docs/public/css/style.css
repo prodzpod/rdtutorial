@@ -222,6 +222,12 @@ h1 {
     font-style: normal;
 }
 
+h2 {
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+}
+
 @keyframes wavy-text {
     from {
         transform: translateY(-4px);
