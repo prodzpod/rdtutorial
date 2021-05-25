@@ -91,7 +91,7 @@ body {
 }
 
 .sidebar-wrapper {
-    max-width: 8rem;
+    max-width: 14vw;
     margin: 1rem;
 }
 
@@ -139,12 +139,12 @@ body {
     background-color: transparent;
     border: 0px transparent solid;
     color: #404020;
-    font-size: 80%;
+    font-size: 16px;
 }
 
 c {
     color: #808040;
-    font-size: 70%;
+    font-size: 16px;
 }
 
 .sidebar-element button::before {
@@ -216,9 +216,31 @@ footer i img {
     word-wrap: break-word;
 }
 
-.markdown-body h1 {
-    font-size: 64px;
-    font-weight: 200;
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes wavy-text {
+    from {
+        transform: translateY(-4px);
+    }
+
+    50% {
+        transform: translateY(4px);
+    }
+
+    to {
+        transform: translateY(-4px);
+    }
+}
+
+strong, b {
+    display: inline-block;
+    font-weight: normal;
+    animation: wavy-text 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--d));
 }
 
 @media screen and (max-width: 500px) {

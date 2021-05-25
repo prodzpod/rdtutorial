@@ -59,7 +59,7 @@ press delete, then File > Export. remember to make it an **.ogg** file!
 and you should be good! set the offset to 0ms, then try to figure out what the BPM is.
 
 ![basics/basics_23.jpg]
-<c>good level btw a:[go play it](https://cdn.discordapp.com/attachments/611380148431749151/839276814501019648/nelward_-_Ghost.rdzip)</c>
+<c>good level btw a:[go play it](https://cdn.discordapp.com/attachments/611380148431749151/839276814501019648/nelward_-_Ghost.rdzip)</c>  
 of course, there are exceptions to this as well. when the song is performed live, there could be slight BPM drifts mid song, the song could accelerate, decellerate... yeah. In that case, ask for help on the discord server. people may be able to help you?
 
 ## We're done with the basics!

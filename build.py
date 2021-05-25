@@ -16,6 +16,11 @@ for root, dirs, files in os.walk("./content"):
             doc = doc.replace(repl[0], repl[1])
         for repl in replaces["regex"].items():
             doc = re.sub(repl[0], repl[1], doc)
+        for matches in re.findall("\\*\\*.+?\\*\\*", doc):
+            txt = ""
+            for letter in enumerate(matches[2:-2]):
+                txt += "<b style=\"--d:" + str(letter[0]) + "\">" + letter[1] + "</b>"
+            doc = doc.replace(matches, txt)
         with open(os.path.join("./docs/public/pages/", file), "w+") as f:
             f.write(doc)
 ###############################################################################

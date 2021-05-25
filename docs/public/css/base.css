@@ -31,11 +31,12 @@
         position: relative;
     }
     
-    a, button, span, p, em, b, ul, li, h1, h2, h3, h4, h5, h6, small, li, td, input, button {
+    a, button, span, p, em, b, c, ul, li, h1, h2, h3, h4, h5, h6, small, li, td, input, button {
         list-style: none;
         letter-spacing: var(--text-spacing-letter);
         margin-bottom: var(--text-spacing-line);
-        font-family:'04b03', 'Noto Sans CJK', 'Noto Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        font-family:'04b03', 'Noto Sans CJK', 'Noto Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
     }
     
     a, button {
