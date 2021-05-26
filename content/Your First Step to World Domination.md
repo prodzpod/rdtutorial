@@ -7,7 +7,7 @@ Just like the name suggests, we cut all the stuff, and will focus on kickstartin
 
 I will also link you to various external sources you can look at, so if you want some in-depth studies or more qualified opinions, check those links out. they're good, I assure you.
 
-Keep in mind that at the time of writing this, I made a total of **1** level. so you might want to get more opinion about some of the less clear cut stuff.
+Keep in mind that at the time of writing this, I made a total of **3** levels. so you might want to get more opinion about some of the less clear cut stuff.
 
 This tutorial is made for **Rhythm Doctor Early Access, r19 Editor**, so free editors might be unable to do some of the more technical stuffs, and the document might miss some of the effects as the editor updates.
 

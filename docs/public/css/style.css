@@ -74,6 +74,7 @@ body {
     margin: 0 auto;
     display: table;
     transition: all 0.2s;
+    padding: 0.5rem;
 }
 
 .navbar-element a:hover {
@@ -91,7 +92,7 @@ body {
 }
 
 .sidebar-wrapper {
-    max-width: 14vw;
+    width: 14vw;
     margin: 1rem;
 }
 
@@ -107,6 +108,7 @@ body {
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 0.3rem;
 }
 .sidebar-element a {
     width: 100%;
@@ -135,11 +137,16 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.post-nav {
+    margin-top: 1rem;
+}
+
 .post-nav *, .sidebar-element * {
     background-color: transparent;
     border: 0px transparent solid;
     color: #404020;
     font-size: 16px;
+    max-width: 33%;
 }
 
 c {

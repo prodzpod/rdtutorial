@@ -80,13 +80,13 @@ for i in range(len(categories)):
             for m in range(4):
                 if (k < len(pages)):
                     endmenu += '<div class="endmenu-element">' + ('&nbsp;' * (2 * pages[k][1]))\
-                            + '<a href="./' + pages[k][0] + '.html">' + pages[k][0] + '</a></div>'
+                            + '<a href="./' + pages[k][0] + '.html"><black>' + pages[k][0] + '</black></a></div>'
                 else:
                     endmenu += '<div class="endmenu-blank"></div>'
                 k += 1
             endmenu += '</div>'
         endmenu += '</div>'
-        page = page    .replace("[[ENDMENU]]", endmenu)
+        page = page.replace("[[ENDMENU]]", endmenu)
         # prev/next on lists...
         if j == 0:
             page = page.replace("[[URLLEFT]]", '#')
