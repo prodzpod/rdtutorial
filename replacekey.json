@@ -28,6 +28,7 @@
     "regex": {
         "\\!\\[(.*)\\]": "![Screenshot](/rdtutorial/public/images/\\1)  ",
         "\\[\\[(.*)\\]\\]": "![Internal Link: ](/rdtutorial/public/images/icon/favicon.png)[\\1](/\\1.html)",
+        "\\#\\[(.*)\\]": "![Internal Link: ](/rdtutorial/public/images/icon/favicon.png)[\\1](#\\1)",
         "g:\\[(.*)\\]\\((.*)\\)": "![Gitbook: ](/rdtutorial/public/images/icon/gitbook.png)[\\1](https://rhythm-doctor.gitbook.io/level-editor/\\2)",
         "a:\\[(.*)\\]\\((.*)\\)": "![RDZip: ](/rdtutorial/public/images/icon/auburn.png)<button class=\"rdzip\" data-clipboard-text=\"\\2\">\\1</button>",
         "{(.)(.)(.)(.)(.)(.)}": "![\\1](/rdtutorial/public/images/rows/\\1.png)![\\2](/rdtutorial/public/images/rows/\\2.png)![\\3](/rdtutorial/public/images/rows/\\3.png)![\\4](/rdtutorial/public/images/rows/\\4.png)![\\5](/rdtutorial/public/images/rows/\\5.png)![\\6](/rdtutorial/public/images/rows/\\6.png)"

@@ -21,12 +21,13 @@ for root, dirs, files in os.walk("./content"):
         for repl in replaces["regex"].items():
             doc = re.sub(repl[0], repl[1], doc)
         for matches in re.findall("\\*\\*.+?\\*\\*", doc):
-            txt = ""
+            txt = "<span class=\"b\" id=\"" + matches[2:-2] + "\">"
             for letter in enumerate(matches[2:-2]):
                 l = letter[1]
                 if (l == ' '):
                     l = '&nbsp;'
                 txt += "<b style=\"--d:" + str(letter[0]) + "\">" + l + "</b>"
+            txt += "</span>"
             doc = doc.replace(matches, txt)
         with open(os.path.join("./docs/public/pages/", file), "w+") as f:
             f.write(doc)
@@ -61,7 +62,7 @@ for i in range(len(categories)):
         navbar = ""
         for k in categories:
             navbar += '<div class="navbar-element hlist"><a href="./' + k\
-                    + '.html" class="center" style="width: ' + str(100 / len(main["categories"]) - 2) + 'vw;"><p class="middle">' + k +'</p></a></div>'
+                    + '.html" class="center" style="width: ' + str(100 / len(main["categories"]) - 2) + 'vw;"><p class="middle"><black>' + k +'</black></p></a></div>'
         page = page    .replace("[[NAVBAR]]", navbar)
         # construct sidebar
         sidebar = ""

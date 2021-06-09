@@ -119,7 +119,7 @@ body {
 .post-wrapper {
     margin: 1rem;
     margin-left: 0;
-    max-width: calc(100% - 11rem);
+    max-width: calc(100% - 14vw - 4rem);
 }
 
 .post {
@@ -319,6 +319,7 @@ strong, b {
     font-weight: normal;
     animation: wavy-text 2s ease-in-out infinite;
     animation-delay: calc(0.02s * var(--d));
+    color: #8040c0;
 }
 
 @media screen and (max-width: 500px) {
